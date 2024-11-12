@@ -1,4 +1,6 @@
 .DS_Store
+.env
+spotify-bq-reader-key.json
 /dist/
 node_modules/
 yarn-error.log
