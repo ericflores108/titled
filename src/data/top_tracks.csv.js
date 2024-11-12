@@ -4,6 +4,7 @@ import { runQuery } from "./google-bigquery.js";
 // Query to dynamically group by each genre's exact name without hardcoding
 const rows = await runQuery(`
   SELECT DISTINCT
+    user_name AS user,
     CONCAT(track_name, ", ", artist_name) AS name,
     popularity
   FROM
